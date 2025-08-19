@@ -1,16 +1,15 @@
+/* global statement */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* global statement */
 
 body{
     background-color: #FFF8FB;
-}
+   }
 
-
-                    /* HEADER */
+/* HEADER */
 header{
     background-color:#6AC06A;
     color:#2E3A59;
@@ -53,8 +52,7 @@ li{
     color: white;
     font-weight: bolder;
     text-transform: uppercase;
-    
- }
+}
 
  nav{
     width: 70%;
@@ -75,64 +73,12 @@ nav li a:hover {
     color: #FFA552;           /* Coral on hover */
 }
 
-/* MEDIA RESPONSIVENESS */
-@media screen and (max-width:600px) {
-    body{
-        width: 100vw;
-        padding: 0;
-        font-size: 15px;
-        align-items: stretch;
-        flex-wrap: wrap;
-        overflow-x: hidden;
-    }
-
-    header{
-        height: auto;
-        padding: 10px 0;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-        position: fixed;
-    }
-
-    .logo{
-        width: 30%;
-        justify-content: center;
-        margin-bottom: 10px;
-        font-size: 2em;
-    }
-
-    .logo img{
-    width: 70%;
-    height: 80%;
-    
-}
-
-    nav{
-        width: 70%;
-        flex-direction: column;
-        align-items: center;
-        font-size: small;
-    }
-
-    nav li a{
-        font-size: 1.5em;
-        justify-content: space-around;
-    }
-
-    i{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-}
-
-                         /* HERO SECTION */
+/* HERO SECTION */
 
 .hero{
     width: 100vw;
     height: 80vh;
-    background-image:url(/Images/Lego_image.jpg);
+    background-image:url(./Images/Lego_image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-clip: content-box;
@@ -157,8 +103,6 @@ nav li a:hover {
     color: white;
     margin-top:120px;
 }
-
-
 
 .hero-content h1{
     font-size: 46px;
@@ -201,30 +145,7 @@ nav li a:hover {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-@media screen and (max-width: 600px) {
-    hero{
-        width: 100vw;
-        height: 60vh;
-        padding: 10px 0;
-    }
-
-    .hero-content{
-        width: 90vw;
-        height: auto;
-        padding: 10px;
-        flex-shrink: 1;
-    }
-
-    .hero-content button{
-        padding: 8px;
-        font-size: 0.5em;
-        display: flex;
-        flex-shrink: 1;
-    }
-}
-
-
-                        /* Main services container */
+/* SERVICES SECTION*/
 .services {
     width: 100vw;
     padding: 40px 0;
@@ -280,9 +201,9 @@ nav li a:hover {
 }
 
 /* Different images for each box */
-.img1 { background-image: url('/Images/kids1.jpg'); }
-.img2 { background-image: url('/Images/kids2.jpg'); }
-.img3 { background-image: url('/Images/kids3.jpg'); }
+.img1 { background-image: url('./Images/kids1.jpg'); }
+.img2 { background-image: url('./Images/kids2.jpg'); }
+.img3 { background-image: url('./Images/kids3.jpg'); }
 
 /* Description styling */
 .service-desc {
@@ -290,25 +211,6 @@ nav li a:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     color:#2E3A59;
-}
-
-@media screen and (max-width: 600px) {
-    .services{
-        width: 100vw;
-    }
-    
-    .services-title{
-        width: 100%;
-        font-size: 1.5em;
-
-    }
-
-    .services_list{
-        font-size:1.5em;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    }
 }
 
 /* .g{
@@ -319,7 +221,7 @@ nav li a:hover {
     border-left: 10px solid black;
 } */
 
-                  /* FEATURES SECTION */
+/* FEATURES SECTION */
 
 .features{
     width:100vw;
@@ -415,7 +317,7 @@ h3{
     text-align:left;
 }
 
-            /* IMAGE AND INFO SECTION */
+/* IMAGE AND INFO SECTION */
 
 .image-and-info{
     margin-top:30px;
@@ -448,7 +350,7 @@ h3{
 .info-on-img{
     width: 40%;
     height: 100%;
-     background: #fff;
+    background: #fff;
     color: #2E3A59;
     border: 2px solid #EE3D8C;
     display: flex;
@@ -502,7 +404,7 @@ h3{
         color: darkgray;
     }
 
-           /* WHAT CLIENT SAY SECTION */
+/* WHAT CLIENT SAY SECTION */
 
 .what-clients-say{
     margin-top: 30px;
@@ -595,7 +497,7 @@ h3{
 .first{
     width: 80%;
     height:40%;
-    background-image: url(/Images/father.jpg);
+    background-image: url(./Images/father.jpg);
     border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -605,7 +507,7 @@ h3{
 .second{
     width: 80%;
     height:40%;
-    background-image: url(/Images/playtime.jpg);
+    background-image: url(./Images/playtime.jpg);
     border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -615,7 +517,7 @@ h3{
 .third{
     width: 80%;
     height:40%;
-    background-image: url(/Images/clothes.jpg);
+    background-image: url(./Images/clothes.jpg);
     border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -625,7 +527,7 @@ h3{
 .fourth{
     width: 80%;
     height:40%;
-    background-image: url(/Images/kids3.jpg);
+    background-image: url(./Images/kids3.jpg);
     border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -645,7 +547,7 @@ h3{
     font-weight: bold;
 }
 
-                /* WHAT CLIENTS SAY2 SECTION */
+/* WHAT CLIENTS SAY2 SECTION */
 
 .what-clients-say2{
     /* margin-top: 30px;
@@ -815,30 +717,7 @@ h3{
     margin-bottom: 0;
 }
 
-
-@media (max-width: 900px) {
-    .rectangles {
-        flex-direction: column;
-        gap: 32px;
-        width: 98vw;
-    }
-    .smith1, .smith2 {
-        width: 98vw;
-        min-width: unset;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .image3 img, .image4 img {
-        margin-bottom: 12px;
-    }
-    .text1, .text2 {
-        align-items: center;
-    }
-}
-
-
-              /* PROMO SECTION */
+ /* PROMO SECTION */
 
 .promo-section {
   margin-top: 35px;
@@ -884,7 +763,7 @@ h3{
   transform: translateY(-3px);
 }
 
-                            /* FOOTER SECTION */
+/* FOOTER SECTION */
 
 /* Footer Base */
 .boldkidz-footer {
@@ -1009,17 +888,6 @@ h3{
   color: #ccc;
 }
 
-@media screen and (max-width:600px) {
-    /* header{
-        width: 150vw;
-        height: 12vh;
-        display: flex; */
+@media (max-width:480px) {
 
-        /* align-items: center;
-        justify-content: center;
-        flex-direction: column; */
-    }
 }
-
-
-   
