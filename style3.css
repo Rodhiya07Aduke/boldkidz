@@ -68,11 +68,11 @@ li{
  }
 
 nav li a{
-    color:#EE3D8C;
+    color: #FFA552;
 }
 
 nav li a:hover {
-    color: #c70a06;           /* Coral on hover */
+    color: #FFA552;           /* Coral on hover */
 }
 
 /* MEDIA RESPONSIVENESS */
