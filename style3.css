@@ -408,9 +408,10 @@ h3{
 
 .what-clients-say{
     margin-top: 30px;
+    margin-bottom: 30px;
     width: 100vw;
-    min-height: 70vh;
-    background: linear-gradient(90deg, #FFB3C6 60%, #FFA552 20% #6AC06A 20%);
+    height: 70vh;
+    background: linear-gradient(90deg, #6AC06A, #FFA552 ,#EE3D8C );
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,7 +419,7 @@ h3{
     padding: 40px 0;
 }
 
-.what-clients-say, .what-clients-say2 {
+ .what-clients-say2 {
     background-color: #FFB3C6; /* Soft pink */
 }
 
@@ -427,7 +428,7 @@ h3{
     font-size: 2.2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
@@ -437,8 +438,11 @@ h3{
     color: whitesmoke;
 }
 
+.what-clients-say p{
+    margin-bottom: 8px;
+}
 .what-they-say{
-     width: 90vw;
+    width: 90vw;
     display: flex;
     justify-content: space-around;
     align-items: stretch;
