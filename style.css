@@ -329,7 +329,7 @@ button:hover{
     color: white;
 }
     /* Improved responsive styles for mobile devices */
-    /* @media (max-width: 600px) {
+    @media (max-width: 600px) {
     .product-section {
         margin-top: 12vh;
     }
@@ -396,4 +396,4 @@ button:hover{
         padding: 10px;
         margin: 20px auto 40px auto;
     }
-} */
+}
