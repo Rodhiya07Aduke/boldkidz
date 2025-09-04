@@ -2,10 +2,12 @@
 	"folders": [
 		{
 			"path": ".."
+		},
+		{
+			"path": "../../../Desktop/JavaScript"
 		}
 	],
 	"settings": {
-		"liveServer.settings.port": 5501,
-		"liveServer.settings.multiRootWorkspaceName": "the generics dummy"
+		"liveServer.settings.multiRootWorkspaceName": "GitHub"
 	}
 }
