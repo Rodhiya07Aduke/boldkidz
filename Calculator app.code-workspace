@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Calculator app"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "GitHub"
+	}
+}
