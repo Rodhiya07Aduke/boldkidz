@@ -24,7 +24,7 @@
     </header>
 
 
-    <section class="hero-section">
+    <section class="hero-section" class="fade-in-section">
         <div class="divisions">
         <div class="first-half">
             <h3>Welcome to BoldKidz Options</h3>
@@ -46,16 +46,117 @@
             <span>At Boldkidz Options, shopping is more than just buying. We give parents peace of mind by curating toys, clothes, and kiddie essentials that balance safety, durability, and fun. Each product is carefully selected to spark curiosity, inspire play, and stand up to the real adventures of childhood.</span>
         </div>
         <div class="believe-in">
-            <h3>what we believe in</h3>
+            <h3>what we believe in:</h3>
             <div class="points">
-                <ul >
-                    <li class="pointers">Safety First, every product is age-appropriate and tested.</li>
-                    <li class="pointers">Play-Focused, items that encourage imagination and discovery.</li>
-                    <li class="pointers"  >Thoughtfully Curated, only standout products make the cut.</li>
-                    <li class="pointers">Family-Friendly, great value, easy shopping, and caring service.</li>
+                <ul>
+                    <li class="pointers"><i class="fa-solid fa-check"></i>Safety First, every product is age-appropriate and tested.</li>
+                    <li class="pointers"><i class="fa-solid fa-check"></i>Play-Focused, items that encourage imagination and discovery.</li>
+                    <li class="pointers"><i class="fa-solid fa-check"></i>Thoughtfully Curated, only standout products make the cut.</li>
+                    <li class="pointers"><i class="fa-solid fa-check"></i>Family-Friendly, great value, easy shopping, and caring service.</li>
                 </ul>
             </div>
         </div>
     </section>
+
+    <section class="team">
+        <div class="team-intro">
+            <h2>Meet the team</h2>
+            <p>At Boldkidz Options, our team works together to ensure every product meets the highest standards of quality, safety, and fun. <br> From selecting the best items to delivering them with care, we’re dedicated to making your family’s shopping experience stress- <br>free and enjoyable.</p>
+        </div>
+        <div class="team-images">
+            <div class="imgs">
+                <img src="/Assets/img/CEO.jpg" alt="C.E.O" width="200px" height="200px" class="images">
+                <div class="text">
+                    <h5>Mrs Raliat: Founder & Toy CEO</h5>
+                    <p>Boldkidz Options is more than a business to Aisha, it’s a family legacy. Growing up, she often helped her mother run the store and discovered a passion for bringing joy to children. Today, she carries that vision forward with fresh creativity, ensuring every product is safe, playful, and full of heart.</p>
+                </div>
+            </div>
+            
+
+            <div class="imgs">
+                <img src="/Assets/img/Pr Manager.jpg" alt="Pr Manager" width="200px" height="200px" class="images" >
+                <span> <h5>Jemaiah: PR Manager</h5> </span>
+                <p>Jemaiah is the voice of Boldkidz Options, making sure our story of joy, safety, and creativity reaches families far and wide. With a passion for building connections, she bridges our brand and the community, ensuring every parent knows they can trust us with their little one’s needs</p>
+            </div>
+
+           <div class="imgs">
+                <img src="/Assets/img/Sales rep.jpg" alt="Sales rep" width="200px" height="200px"  class="images">
+                <div class="text">
+                    <h5>Tunde: Head of Sales</h5>
+                    <p>Tunde makes sure every Boldkidz product finds its way into the right hands. With a sharp eye for trends and a heart for families, he connects our carefully curated collections with parents who want the very best for their kids. His goal? To make shopping with us easy, exciting, and rewarding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="boldkidz-footer">
+
+<div class="footer-newsletter">
+    <h3 class="newsletter-title">Subscribe to Our Newsletter</h3>
+    <p class="newsletter-desc"">Get exclusive offers, fun gift ideas, and the latest arrivals straight to your inbox!</p>
+    <form action="https://formspree.io/f/mqadnryg" method="post" class="newsletter-form">
+        <input type="email" name="Boldkidz options email" placeholder="Enter your Emial Address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+</div>
+
+  <div class="footer-container">
+    
+    <!-- Logo & About -->
+    <div class="footer-about">
+      <h2 class="footer-logo">BOLD<span>KIDZ</span></h2>
+      <p>Bringing joy, style, and comfort to every little one. From playful clothes to unique toys, we make childhood colorful.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="shopNow.html">Shop</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="mailto: boldkidzoptions@yahoo.com">Contact</a></li>
+        <li><a href="/faq">FAQ</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h3>Get in Touch</h3>
+      <p>Email: <a href="mailto: boldkidzoptions@yahoo.com<">boldkidzoptions@yahoo.com</a></p>
+      <p>Phone: <a href="tel:+2348113607975">+234 811 360 7975</a></p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/share/1D6Y2UKkGW/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/boldkidzoptions?igsh=azZlbmx2a3dvbDJi"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/boldkidzo?s=11"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+    <p>© 2025 BoldKidz. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const faders = document.querySelectorAll('.fade-in-section');
+  const appearOptions = { threshold: 0.15 };
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+});
+</script>
 </body>
 </html>
