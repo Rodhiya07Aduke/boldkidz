@@ -236,7 +236,7 @@ p{
     justify-content: flex-start;
     align-items: end;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
     margin-top: 15px;
@@ -250,7 +250,6 @@ p{
     font-family: var(--font-primary);
     text-align: center;
     width: 100%;
-    margin: 0 auto;
 }
 
 .pointers{
@@ -259,12 +258,18 @@ p{
     margin-bottom: 15px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-left: 30px;
 }
 
 .pointers i{
     margin-left: 5px;
     margin-right: 10px;
     color: var(--accent-color);
+}
+
+.points{
+  margin-left: 30px;
 }
 
 .team{
