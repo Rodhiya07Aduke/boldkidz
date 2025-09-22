@@ -538,6 +538,8 @@ p{
 .imgs img, .images {
   transition: box-shadow 0.4s, transform 0.4s;
 /* Team card hover effect */
+}
+
 .imgs:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 32px rgba(46,58,89,0.15);
@@ -623,4 +625,5 @@ p{
     .believe-in ul {
         text-align: left;
     }
+}
 }
