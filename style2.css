@@ -19,26 +19,23 @@
 }
 
 body{
-    
-    width: 100vw;
-    height: 100vh;
-    background-color:hsla(227, 7%, 86%, 0.624);
     background-color: var(--light-gray);
     font-family: var(--font-secondary);
     color: var(--dark-blue);
     overflow-x: hidden; /* Prevents horizontal scrollbar from animations */
+    animation: fadeIn 1s ease-in 0.5s both;
 }
 
 header{
     background-color:#6AC06A;
     color:#2E3A59;
     /* note: vw is viewport width, vh is viewport height. Also header should take more than 10% of page */
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     /* display flex makws it go uo to the right */
     display: flex;
-    display: flex; 
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 10;
 }
 
@@ -58,7 +55,6 @@ header{
 
 /* parent child inheritance. Here it is stated that go to logo and pick the span there */
 .logo span{
-    color: black;
     color: var(--black);
 }
 
@@ -66,7 +62,6 @@ li{
     list-style: none;
 }
  a{
-    color: black;
     color: var(--black);
     text-decoration: none;
     
@@ -94,7 +89,6 @@ nav li a{
 }
 
 nav li a:hover {
-    color: #FFA552;           /* Coral on hover */
     color: var(--secondary-color); /* Coral on hover */
 }
 
@@ -103,7 +97,7 @@ nav li a:hover {
     font-optical-sizing: auto;
     font-style: normal;
     font-family: var(--font-primary);
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -115,7 +109,6 @@ nav li a:hover {
     background-clip: content-box;
     background-position: center;
     /* background-color: hsl(0, 0%, 70%); */
-    color: white;
     color: var(--white);
     position: relative; /* Crucial for positioning the ::after pseudo-element */
 }
@@ -124,8 +117,7 @@ nav li a:hover {
   content: "";
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4); /* soft black overlay */
   z-index: 1;
@@ -152,7 +144,6 @@ nav li a:hover {
 .second-half{
     width: 50%;
     height: 100%;
-    color: white;
     color: var(--white);
 }
 
@@ -175,7 +166,6 @@ p{
     font-family: var(--font-primary);
     margin-top: 20px;
     padding: 15px;
-    border: 2px white solid;
     border: 2px var(--white) solid;
     border-radius: 15px;
     background-color: transparent;
@@ -184,19 +174,17 @@ p{
 .first-half-btn:hover{
     cursor: pointer;
     background: linear-gradient(90deg, #EE3D8C, #FFA552, #CBA1FF) ;
-    color: #EE3D8C;
     color: var(--primary-color);
     border: none;
     transform: scale(1.1);
 }
 
 .first-half-btn a{
-    color: white;
     color: var(--white);
 }
 
 .why-choose-us{
-    width: 100vw;
+    width: 100%;
     height: 70vh;
     padding: 60px 20px;
     margin-top: 35px;
@@ -204,8 +192,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;;
     gap: 40px;
+    min-height: 500px;
     color: var(--white);
 }
 
@@ -273,7 +261,7 @@ p{
 }
 
 .team{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: white;
     padding: 80px 20px;
@@ -283,6 +271,7 @@ p{
     align-items: center;
     justify-content: center;
     justify-content: flex-start;
+    min-height: 800px;
     flex-direction: column;
 }
 
@@ -313,11 +302,10 @@ p{
 .team-images{
    display: flex;
    justify-content: center;
-   flex-wrap: wrap;
    flex-direction: row;
    align-items: flex-start;
    gap: 32px;
-   flex-wrap: nowrap;
+   flex-wrap: wrap;
 }
 
 .images{
@@ -326,7 +314,9 @@ p{
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid var(--white);
+    background-color: var(--light-gray);
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .imgs{
@@ -343,6 +333,13 @@ p{
     border-radius: 15px;
     box-shadow: 0 8px 24px rgba(46,58,89,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imgs .text {
+    margin-top: 15px;
+}
+.imgs .text h5 {
+    margin-bottom: 10px;
 }
 
 .boldkidz-footer {
@@ -375,7 +372,6 @@ p{
 }
 .footer-logo span {
   color: #FFA552;
-  color: var(--secondary-color);
 }
 
 .footer-about p {
@@ -405,12 +401,10 @@ p{
   margin-bottom: 8px;
 }
 .footer-links ul li a {
-  color: #EE3D8C;
   color: var(--primary-color);
   text-decoration: none;
 }
 .footer-links ul li a:hover {
-  color: #FFA552;
   color: var(--secondary-color);
   text-decoration: underline;
 }
@@ -433,11 +427,9 @@ p{
   display: inline-block;
   margin-right: 10px;
   font-size: 1.2rem;
-  color: #FFA552;
   color: var(--secondary-color);
 }
 .footer-socials a:hover {
-  color:#EE3D8C ;
   color: var(--primary-color);
 }
 
@@ -486,7 +478,6 @@ p{
   outline: none;
 }
 .newsletter-form button {
-  background: #EE3D8C;
   background: var(--primary-color);
   color: white;
   padding: 10px 18px;
@@ -526,6 +517,11 @@ p{
   transform: none;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 /* Button hover effect */
 .first-half-btn, .newsletter-form button {
   transition: background 0.3s, color 0.3s, transform 0.3s;
@@ -534,30 +530,20 @@ p{
   transform: scale(1.08) rotate(-2deg);
 }
 
-/* Team image hover effect */
-.imgs img, .images {
-  transition: box-shadow 0.4s, transform 0.4s;
 /* Team card hover effect */
-}
-
 .imgs:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 32px rgba(46,58,89,0.15);
 }
-.imgs img:hover, .images:hover {
-  box-shadow: 0 8px 32px rgba(238,61,140,0.18);
-  transform: scale(1.06) rotate(1deg);
 
 .imgs:hover .images {
-    transform: scale(1.05);
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 8px 24px rgba(238,61,140,0.15);
 }
 
 /* Section background and shadow transitions */
 .team, .why-choose-us, .hero-section {
   transition: background 0.6s, box-shadow 0.6s;
-}
-.team:hover, .why-choose-us:hover, .hero-section:hover {
-  box-shadow: 0 8px 32px rgba(46,58,89,0.12);
 }
 
 /* Newsletter form animation */
@@ -567,6 +553,20 @@ p{
 .newsletter-form:hover {
   box-shadow: 0 4px 24px rgba(238,61,140,0.12);
   transform: scale(1.03);
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 992px) {
+    .why-choose-us {
+        flex-direction: column;
+        height: auto;
+        padding: 60px 40px;
+        text-align: center;
+    }
+    .choose-us, .believe-in {
+        width: 100%;
+        max-width: 600px;
+    }
 }
 
 /* Responsive Design */
@@ -608,22 +608,43 @@ p{
         margin-bottom: 0;
     }
 
-    p {
-        text-align: center;
+    .first-half p, .team-intro p {
+        text-align: center; /* Center specific paragraphs on mobile */
     }
 
     .why-choose-us {
-        flex-direction: column;
         text-align: center;
+        padding: 40px 20px;
     }
 
     .choose-us, .believe-in {
         width: 100%;
         align-items: center;
     }
-
-    .believe-in ul {
+    .believe-in .points {
+        margin-left: 0;
+    }
+    .believe-in .points ul {
         text-align: left;
     }
-}
+
+    .team {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-about, .footer-links, .footer-contact {
+        align-items: center;
+    }
+    .footer-links ul {
+        padding: 0;
+    }
+    .footer-socials {
+        justify-content: center;
+    }
 }

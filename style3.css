@@ -25,6 +25,9 @@ body{
     scroll-behavior: smooth;;
    }
 
+   body{
+    animation: fadeIn 1s ease-in 0.5s both;
+}
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
